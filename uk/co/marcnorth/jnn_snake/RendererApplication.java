@@ -54,6 +54,11 @@ public class RendererApplication extends Application implements GeneticAlgorithm
     setupEvents();
     startRenderLoop();
   }
+
+  @Override
+  public void stop() {
+    System.exit(0);
+  }
   
   private void setupStage() {
     stage.setTitle("Snake!");
